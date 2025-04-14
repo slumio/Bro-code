@@ -1,4 +1,4 @@
-![logo]([https://github.com/slumio/Bro-code/assets/100127570/d1ff7f52-a692-4d51-b281-358aeab9156e](https://github.com/slumio/Bro-code/blob/main/client/src/assets/logo.svg))
+![logo](https://github.com/slumio/Bro-code/blob/main/client/src/assets/logo.svg)
 
 A collaborative, real-time code editor where users can seamlessly code together. It provides a platform for multiple users to enter a room, share a unique room ID, and collaborate on code simultaneously.
 
