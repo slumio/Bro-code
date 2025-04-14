@@ -107,20 +107,20 @@ You can view the live preview of the project [here](https://code-sync-live.verce
 
    ```bash
    # Pull Backend Image
-   docker pull sahilatahar/code-sync-server:latest
+   docker pull slumio/Bro-code-server:latest
 
    # Pull Frontend Image
-   docker pull sahilatahar/code-sync-client:latest
+   docker pull slumio/Bro-code-client:latest
    ```
 
 3. **Run Docker Containers:**
 
    ```bash
    # Run Backend Container (Port 3000)
-   docker run -d -p 3000:3000 --name code-sync-server sahilatahar/code-sync-server:latest
+   docker run -d -p 3000:3000 --name Bro-code-server slumio/Bro-code-server:latest
 
    # Run Frontend Container (Port 5173)
-   docker run -d -p 5173:5173 --name code-sync-client sahilatahar/code-sync-client:latest
+   docker run -d -p 5173:5173 --name Bro-code-client slumio/Bro-code-client:latest
    ```
 
 4. **Access the application:**
@@ -140,49 +140,3 @@ We welcome contributions to make Code Sync even better! Follow the [contribution
 
 If you find this helpful or valuable, please consider 🌟 starring the repository. It helps us gain visibility and encourages further development.
 
-## 🧾 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## 🌟 Appreciation for Resources
-
-Special thanks to:
-
-- EMKC for providing the Piston API:
-
-  - [Piston Repository](https://github.com/engineer-man/piston)
-  - [Piston Docs](https://piston.readthedocs.io/en/latest/api-v2/)
-
-- Tldraw contributors:
-  - [Tldraw Repository](https://github.com/tldraw/tldraw)
-  - [Tldraw Documentation](https://tldraw.dev/)
-
-- Pollinations AI:
-  - [Pollinations Repository](https://github.com/pollinations/pollinations)
-  - [Pollinations Docs](https://pollinations.ai/)
-
-## ✍️ About Developer
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top">
-        <img src="https://github.com/sahilatahar.png" width="120px;" alt="Sahil Atahar"/>
-        <br />
-        <b>Sahil Atahar</b>
-      </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <a href="https://github.com/sahilatahar">
-            <img src="https://img.shields.io/badge/GitHub-100000.svg?style=for-the-badge&logo=github&logoColor=white"/>
-            </a>
-            <br/>
-            <a href="https://linkedin.com/in/sahilatahar">
-            <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
-            </a>
-        </td>
-    </tr>
-  </tbody>
-</table>
-# Bro-code
