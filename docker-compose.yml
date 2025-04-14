@@ -30,5 +30,5 @@ services:
       - server
 
 networks:
-  Code-Sync:
+  Bro-code:  # <--- fixed here
     driver: bridge
