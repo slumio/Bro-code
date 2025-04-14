@@ -132,7 +132,7 @@ You can view the live preview of the project [here](https://code-sync-live.verce
 
 ## 🤝 Contribute
 
-We welcome contributions to make Code Sync even better! Follow the [contribution guidelines](CONTRIBUTING.md) to get started.
+We welcome contributions to make Bro code even better! Follow the [contribution guidelines](CONTRIBUTING.md) to get started.
 
 ## 🌟 Support Us
 
