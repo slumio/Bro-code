@@ -128,7 +128,18 @@ You can view the live preview of the project [here](https://code-sync-live.verce
 
 ## 🔮 Features for Next Release
 
-- **Admin Permission:** Implement an admin permission system to manage user access levels and control over certain platform features.
+- **Database Integration:**  
+  Introduce a backend database (e.g., MongoDB, PostgreSQL) to persistently store:
+  - User-generated code files and folder structures  
+  - Room sessions and collaboration metadata  
+  - Chat messages and collaborative drawings
+
+- **User Authentication & Permissions:**  
+  Implement secure user authentication with support for:
+  - Role-based access control (RBAC)  
+  - Admins with elevated privileges to manage users, delete rooms, and perform system-level actions  
+  - Editors and viewers with limited scopes based on permissions  
+
 
 ## 🤝 Contribute
 
