@@ -26,6 +26,11 @@ enum SocketEvent {
 	REQUEST_DRAWING = "request-drawing",
 	SYNC_DRAWING = "sync-drawing",
 	DRAWING_UPDATE = "drawing-update",
+
+	// 🔵 New socket events you can add for Room database operations:
+	ROOM_SAVED = "room-saved",         // optional acknowledgment after save
+	LOAD_ROOM_DATA = "load-room-data", // to load previous session
+	ROOM_DATA = "room-data",            // server sends saved data (files/messages/drawings)
 }
 
 interface SocketContext {

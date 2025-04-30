@@ -6,6 +6,14 @@ import { SocketEvent, SocketId } from "./types/socket"
 import { USER_CONNECTION_STATUS, User } from "./types/user"
 import { Server } from "socket.io"
 import path from "path"
+import connectDB from "./config/db";
+import mongoose from "mongoose";
+import { UserModel } from "./models/user";
+import "./types/temp"
+import { registerSocketHandlers } from "./types/socketHandlers";
+
+
+connectDB();
 
 dotenv.config()
 
@@ -57,7 +65,28 @@ function getUserBySocketId(socketId: SocketId): User | null {
 
 io.on("connection", (socket) => {
 	// Handle user actions
-	socket.on(SocketEvent.JOIN_REQUEST, ({ roomId, username }) => {
+	socket.on(SocketEvent.JOIN_REQUEST, async ({ roomId, username }) => {
+
+		console.log(`${username} joined room ${roomId}`);
+
+	// Save user to MongoDB
+	try {
+		const newUser = new UserModel({
+			username,
+			roomId,
+			status: USER_CONNECTION_STATUS.ONLINE,
+			cursorPosition: 0,
+			typing: false,
+			currentFile: null,
+			socketId: socket.id,
+		});
+
+		await newUser.save();
+		console.log(`Saved user ${username} to MongoDB`);
+	} catch (err) {
+		console.error("Error saving user to DB:", err);
+	}
+	
 		// Check is username exist in the room
 		const isUsernameExist = getUsersInRoom(roomId).filter(
 			(u) => u.username === username
@@ -259,6 +288,7 @@ io.on("connection", (socket) => {
 		})
 	})
 })
+
 
 const PORT = process.env.PORT || 3000
 
