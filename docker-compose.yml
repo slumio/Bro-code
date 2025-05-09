@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   server:
     container_name: Bro-code-server
@@ -7,11 +9,13 @@ services:
       target: runner
     volumes:
       - ./server:/app
-      - /build/node_modules
+      - /app/node_modules  # Mount node_modules inside container to prevent overwriting
     networks:
       - Bro-code
     ports:
       - "3000:3000"
+    environment:
+      - NODE_ENV=production
 
   client:
     container_name: Bro-code-client
@@ -21,14 +25,16 @@ services:
       target: runner
     volumes:
       - ./client:/app
-      - /build/node_modules
+      - /app/node_modules  # Mount node_modules inside container to prevent overwriting
     networks:
       - Bro-code
     ports:
       - "5173:5173"
     depends_on:
       - server
+    environment:
+      - NODE_ENV=production
 
 networks:
-  Bro-code:  # <--- fixed here
+  Bro-code:
     driver: bridge
