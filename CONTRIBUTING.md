@@ -10,7 +10,7 @@ Thank you for considering contributing to code sync! Follow the steps below to c
 
 2. **Clone the Repository:** Clone your forked repository to your local machine:
    ```bash
-   git clone https://github.com/<your_username>/Code-Sync.git
+   git clone https://github.com/<your_username>/Bro-code.git
    ```
 
 ## Making Changes
@@ -38,7 +38,7 @@ Thank you for considering contributing to code sync! Follow the steps below to c
 
 ## Reporting Bugs
 
-If you find a bug while using Code Sync, please report it by opening an issue on Github. Please include the following information:
+If you find a bug while using Bro code, please report it by opening an issue on Github. Please include the following information:
 
 * Description of the bug
 * Steps to reproduce the bug
