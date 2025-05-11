@@ -11,22 +11,25 @@ RUN npm ci
 # Copy the rest of the source code and build the project
 COPY . .
 
+# Build the TypeScript code
 RUN npm run build
+
+# Remove devDependencies after build
 RUN npm prune --omit=dev
 
-# Stage 2: Copy only the `dist` folder
+# Stage 2: Create production image
 FROM node:18-alpine AS runner
 
 WORKDIR /app
 
-# Copy the `dist` folder from the builder stage
-COPY --from=builder /build/dist dist/
-COPY --from=builder /build/public public/
-COPY --from=builder /build/node_modules /node_modules
-COPY --from=builder /build/package*.json .
+# Copy only the necessary files for production
+COPY --from=builder /build/dist ./dist
+COPY --from=builder /build/public ./public
+COPY --from=builder /build/node_modules ./node_modules
+COPY --from=builder /build/package*.json ./
 
-# Optional Expose a port
+# Expose the port (adjust if needed)
 EXPOSE 3000
 
-# Start the server
-CMD ["npm", "run", "start"]
+# Start the compiled server (ensure your package.json points here)
+CMD ["node", "dist/server.js"]
