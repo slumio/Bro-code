@@ -1,8 +1,8 @@
-# Contributing to Code Sync
+# Contributing to Bro Code
 
-We welcome contributions to the Code Sync project! Whether you're reporting a bug, suggesting a new feature, or fixing a typo, your input is valuable to us. Here are some guidelines to help you get started:
+We welcome contributions to the Bro Code project! Whether you're reporting a bug, suggesting a new feature, or fixing a typo, your input is valuable to us. Here are some guidelines to help you get started:
 
-Thank you for considering contributing to code sync! Follow the steps below to contribute:
+Thank you for considering contributing to Bro Code! Follow the steps below to contribute:
 
 ## Getting Started
 
@@ -56,7 +56,7 @@ If you notice a spelling mistake or grammatical error in the project's documenta
 
 ## Thank You!
 
-Thank you for contributing to Code Sync! Your efforts make a difference.
+Thank you for contributing to Bro Code! Your efforts make a difference.
 If you have questions or need assistance, contact the project maintainers.
 
 Happy contributing!
