@@ -10,10 +10,11 @@ const fileSchema = new mongoose.Schema({
   parentId: { 
     type: mongoose.Schema.Types.ObjectId, 
     ref: "File", 
-    default: null 
+    default: null,
+    required: false 
   },
   // Add a string version of parentId for easier lookups when using UUIDs
-  parentOriginalId: { type: String, default: null }
+  parentOriginalId: { type: String, default: null, required: false }
 }, { 
   timestamps: true,
   _id: true
