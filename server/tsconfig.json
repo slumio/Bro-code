@@ -6,8 +6,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDir": "./src",              //  Ensures input files are in src/
-    "forceConsistentCasingInFileNames": true // Catch casing issues (esp. on Linux)
+    // "rootDir": "./src",              //  Ensures input files are in src/
+    // "forceConsistentCasingInFileNames": true // Catch casing issues (esp. on Linux)
   },
   "include": ["src"],
   "exclude": ["node_modules"]

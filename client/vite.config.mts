@@ -30,9 +30,10 @@ export default defineConfig({
         ],
     },
     preview: {
-        port: 5173
+        port: 5173,
     },
-    server:{
-        open: true,
+    server: {
+        port: 5173,   // 🔧 Ensures dev server runs on localhost:5173
+        open: true,   // Opens browser automatically
     }
 })
