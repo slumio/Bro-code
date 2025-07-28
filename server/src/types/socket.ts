@@ -16,6 +16,7 @@ enum SocketEvent {
 	FILE_UPDATED = "file-updated",
 	FILE_RENAMED = "file-renamed",
 	FILE_DELETED = "file-deleted",
+	FILE_STRUCTURE_UPDATED = "FILE_STRUCTURE_UPDATED",
 	USER_OFFLINE = "offline",
 	USER_ONLINE = "online",
 	SEND_MESSAGE = "send-message",
