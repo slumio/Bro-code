@@ -10,7 +10,8 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@uiw/codemirror-extensions-color": "^4.21.21",
+        "@tailwindcss/vite":"^4.1.12",
+        "@uiw/codemirror-extensions-color": "^4.1.12",
         "@uiw/codemirror-extensions-hyper-link": "^4.21.21",
         "@uiw/codemirror-extensions-langs": "^4.21.21",
         "@uiw/codemirror-themes-all": "^4.21.21",
@@ -62,4 +63,5 @@
         "vite": "^6.2.2"
     }
 }
+
 
