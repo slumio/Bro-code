@@ -1,11 +1,5 @@
 {
-    "version": 2,
-   
-      {
-        "src": "server/package.json",
-        "use": "@vercel/node"
-      }
-    ],
+    
     "routes": [
       {
         "src": "/api/(.*)",
